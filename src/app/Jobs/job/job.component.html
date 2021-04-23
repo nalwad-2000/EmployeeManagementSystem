@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div style="position:relative; left:210px">
+<h1 style="font-family:verdana;color:rgb(86, 83, 88)">{{job.jobname}}</h1>
+
+<div class="row">
+    <div class="column" style="background-color:white;">
+       Job Posted : {{job.jobpostingdate | date}}<br><br>
+       <i class="fa fa-briefcase" style="font-size:15px; color:rgb(86, 83, 88)"></i> {{job.experiencelevel}}<br><br>
+      
+    </div>
+    <div class="column" style="background-color:white;">
+        <i class="fa fa-map-marker" style="font-size:24px; color:rgb(86, 83, 88)"></i> {{job.preferedlocation}}<br><br>
+        Positions : {{job.noofpositions}}<br><br>
+    </div>
+    <div class="column" style="background-color:white;">
+        Urgency : {{job.urgency}}<br><br>
+        <!--Expiry Date : {{job.expirydate}}-->
+    </div>
+  </div>
+
+<br>
+
+    <h2 style="color:rgb(86, 83, 88)">Job Description</h2>
+    <div class="flex-rectangle">{{job.jobdescription}}</div> <br>
+    
+    <h2 style="color:rgb(86, 83, 88)">Key Skills</h2>
+    <div class="flex-square">
+     <ul  *ngFor="let data of job.requiredskills">
+       <li> {{data}} </li>
+    </ul>
+    </div>  
+  </div>

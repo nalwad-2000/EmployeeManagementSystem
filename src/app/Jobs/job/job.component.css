@@ -1,0 +1,23 @@
+.flex-rectangle{
+  width: 75%;
+  background: rgb(241, 246, 248);
+}
+
+.flex-square{
+  width: 20%;
+  background: rgb(241, 246, 248);
+}
+
+.column {
+float: left;
+width: 13%;
+padding: 10px;
+height: 70px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}

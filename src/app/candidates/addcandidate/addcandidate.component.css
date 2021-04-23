@@ -1,0 +1,54 @@
+.mat-form-field { 
+  width: 65%; 
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 530px; /* Should be removed. Only for demonstration */
+}
+
+.clmn{
+  height: 50px;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #4b4276; 
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+
+.btn {
+  background-color: #4b4276; 
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.rsform-block-hidden-field{
+  display: none;
+  }

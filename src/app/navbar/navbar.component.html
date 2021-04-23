@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+  <div class="sidebar">
+    <br><br><br>
+    <ul>
+      <li role="presentation" class="active"><a routerLink="/home">&nbsp;<i class="fa fa-home"></i>Home</a></li>
+      
+      <li role="presentation" class="active"><a>&nbsp;<i class="fa fa-users"></i>Candidates</a></li>
+
+      <li role="presentation" class="active"><a routerLink="/addcandidate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i>Add Candidate</a></li>
+
+      <li role="presentation" class="active"><a routerLink="/candidates">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-eye"></i>View Candidates</a></li>
+
+      <li role="presentation" class="active"><a>&nbsp;<i class="fa fa-globe"></i>Jobs</a></li>
+
+      <li role="presentation" class="active"><a routerLink="/addjob">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i>Add Job</a></li>
+      
+      <li role="presentation" class="active"><a routerLink="/jobs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-eye"></i>View Jobs</a></li>
+    </ul>
+  </div>
+  <div class="main_content">
+    <mat-toolbar><mat-toolbar-row>
+      <span>&nbsp;&nbsp;{{title}}</span>
+      <span class="example-spacer"></span>
+      <app-header></app-header>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  </div>
+

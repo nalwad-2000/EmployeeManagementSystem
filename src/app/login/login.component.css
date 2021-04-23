@@ -1,0 +1,34 @@
+.mat-card{
+    width: 450px;
+}
+
+.mat-form-field {
+    width: 220px;
+}
+
+.button {
+    background-color: #6b6492; 
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    }
+
+    .column {
+        float: left;
+        width: 48%;
+        padding: 10px;
+        height: 400px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    

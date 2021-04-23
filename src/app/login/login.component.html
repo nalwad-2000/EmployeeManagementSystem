@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="column">
+    <img src="http://www.softite.com/assets/Icon_Large_LeadershipTalent.gif" width="700px" height="700px"> 
+  </div>
+  <div class="column"><br><br><br><br><br><br><br><br><br><br><br>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title style="color:rgb(97, 91, 100)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login to Employee Management</mat-card-title>
+      </mat-card-header>
+    
+        <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <form [formGroup]="emailfornotesForm">
+                  <div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <mat-form-field appearance="outline">
+                      <input matInput id="emailfornotes" placeholder="Email" formControlName="emailfornotes" class="form-control" (change)="onoptionchangeemail(emailfornotesForm.value.emailfornotes)">
+                    </mat-form-field>
+                </div>
+                </form>
+              </td>
+            </tr>
+            <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <mat-form-field class="example-full-width" appearance="outline">
+              <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+            </mat-form-field></td>
+          </tr></table>
+        </form>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" class="button" (click)="login()">Submit</button>
+    
+    </mat-card>
+  </div>
+</div>

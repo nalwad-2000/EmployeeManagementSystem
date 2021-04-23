@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div style="position:relative; left:210px; top:20px">
+<div class="row">
+
+    <div class="column" *ngFor = "let user of users">
+     
+       <mat-card class="mcard">
+            <mat-card-header>
+                <img mat-card-avatar src="{{user.candidateimage}}" alt=""> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,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">
+                &nbsp;<span><br>{{user.industryexperience}}</span>
+                <mat-card-title><a [routerLink]="['/candidates/candidate',user.id]">{{user.name}}</a></mat-card-title>
+                <mat-card-subtitle><b>{{user.jobappliedfor}}</b></mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <i class="fa fa-phone" style="font-size:20px;color:green"></i> {{user.phone}} &nbsp;&nbsp;&nbsp;<i class="material-icons" style="font-size:20px;color:rgb(255, 175, 27)">email</i>&nbsp;{{user.email}} <br>
+            </mat-card-content>
+        </mat-card>
+    <br>
+  </div>
+
+</div>
+</div>
+
+
+
+    

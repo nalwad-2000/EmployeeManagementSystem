@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div style="position:relative; left:210px; top:20px">
+<div class="row">
+
+    <div class="column" *ngFor = "let job of jobs">
+
+       <mat-card class="mcard">
+            <mat-card-header>
+              <img mat-card-avatar src="{{job.logo}}" alt=""> 
+                <mat-card-title><a [routerLink]="['/jobs/job',job.id]">{{job.jobname}}</a></mat-card-title><br><br>
+                <mat-card-subtitle><i class="fa fa-briefcase" style="font-size:20px"></i> {{job.experiencelevel}} &nbsp;&nbsp;&nbsp; <i class="fa fa-map-marker" style="font-size:24px"></i> {{job.preferedlocation}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+            </mat-card-content>
+            <mat-card-actions>
+                </mat-card-actions>
+        </mat-card>
+        <br>
+</div>
+</div>
+</div><br>
+
+
